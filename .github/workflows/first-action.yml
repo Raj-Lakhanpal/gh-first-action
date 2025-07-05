@@ -1,0 +1,14 @@
+name: First Worflow
+
+# When it should be executed manually
+on: workflow_dispatch
+
+# what work should be done
+jobs:
+  first-job:
+    runs-on: macos-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
